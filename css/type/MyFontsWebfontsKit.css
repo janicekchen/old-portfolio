@@ -1,0 +1,40 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4009567, 2021-02-07T09:23:01-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AvenirLTPro-Black by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-95-black/
+ * 
+ * Webfont: AvenirLTPro-BlackOblique by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-95-black-oblique/
+ * 
+ * 
+ * Webfonts copyright: Copyright &amp;#x00A9; 2014 Monotype GmbH. All rights reserved.
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3d2e5f");
+  
+@font-face {
+  font-family: "AvenirLTPro-BlackOblique";
+  src: url('webFonts/AvenirLTProBlackOblique/font.woff2') format('woff2'), url('webFonts/AvenirLTProBlackOblique/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirLTPro-Black";
+  src: url('webFonts/AvenirLTProBlack/font.woff2') format('woff2'), url('webFonts/AvenirLTProBlack/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "AvenirLTPro-Light";
+  src: url('webFonts/AvenirLTProLight/font.woff2') format('woff2'), url('webFonts/AvenirLTProLight/font.woff') format('woff');
+}
+

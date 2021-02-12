@@ -1,0 +1,458 @@
+/* GENERAL */
+
+:root {
+    --pink: #ff48b0;
+    --blue: #0078bf;
+    --yellow: #fec300;
+    --yellowL: #ffe800;
+    --beige: #fff8eb;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--beige);
+}
+
+.main { /* for space below navbar */
+    width: 100%;
+    padding: 0 7%;
+    margin-top: 300px;
+    z-index: 0;
+}
+
+.main-port { /* for space below navbar on portfolio pages */
+    width: 60%;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+}
+
+@media (min-width: 500px) {
+    .main {
+        margin-top: 200px;
+    }
+
+    .main-port {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .main-port {
+        width: 650px;
+    }
+}
+
+h1 { /* for titles on portfolio pages */
+    font-family: 'AvenirLTPro-Black', sans-serif;
+    letter-spacing: 0.08em;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 { /* for intro blurbs */
+    font-family: 'AvenirLTPro-Black', sans-serif;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    font-size: 30px;    
+}
+
+h3 { /* for small titles */
+    font-family: 'AvenirLTPro-BlackOblique', sans-serif;
+    letter-spacing: 0.08em;
+    color: black;
+    font-size: 16px;
+}
+
+h4 { /* for portfolio names */
+    font-family: 'AvenirLTPro-BlackOblique', sans-serif;
+    letter-spacing: 0.08em;
+    color: black;
+    font-size: 16px;
+}
+
+h5 { /* for portfolio desc */
+    font-family: 'AvenirLTPro-Light', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+p {
+    font-family: 'AvenirLTPro-Light', sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 25px;
+}
+
+.backto { /*"back to portfolio*/
+    font-family: 'AvenirLTPro-BlackOblique', sans-serif;
+    letter-spacing: 0.08em;
+    font-size: 18px;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.contact { /* contact text */
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer { 
+    width: 100%;
+    padding: 100px 0px 50px 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--yellow);
+}
+
+/* NAVBAR */
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 7.5%;
+    mix-blend-mode: multiply;
+}
+
+#menu-gradient {
+    z-index: 1;
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(var(--beige), var(--beige), rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 0;
+}
+
+#menu-top {
+    z-index: 3
+}
+
+#menu-lower {
+    z-index: 2;
+    top: 1.5px;
+    left: 1.5px;
+}
+
+#title-lower {
+    opacity: 0;
+}
+
+#carto-lower {
+    color: var(--yellowL);
+    opacity: 0;
+}
+
+#writing-lower {
+    color: var(--pink);
+    opacity: 0;
+}
+
+#wood-lower {
+    color: var(--yellowL);
+    opacity: 0;
+}
+
+@media (max-width: 775px) {
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .item {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .item {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.title a {
+    font-family: "AvenirLTPro-BlackOblique", sans-serif;
+    text-decoration: none;
+    font-size: 45px;
+    letter-spacing: 0.08em;
+    color: black;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+.item a {
+    font-family: "AvenirLTPro-Black", sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    font-size: 20px;
+    color: black;
+}
+
+li {
+    display: inline;
+}
+
+/* HOME */
+#home-intro {
+    height: 15vh;
+}
+
+.port-container { /* wrapper for all portfolio cards */
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.port-cardwrapper { /* wrapper enclosing both photo and caption */
+    height: 365px;
+    width: 100%;
+    overflow-wrap: break-word; 
+    margin-bottom: 30px;
+}
+
+.caption-wrapper {
+    padding: 7px;
+    width: 100%;
+}
+
+.port-container  a {
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.port-container.carto a:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 925px) {
+    .port-container > a {
+        width: 48%;
+    }
+
+}
+@media (min-width: 1075px) {
+    .port-container > a {
+        width: 24.5%;
+    }
+
+    .port-cardwrapper:hover .caption-wrapper {
+        opacity: 1;
+    }
+
+    .caption-wrapper {
+        opacity: 0;
+    }
+}
+
+.port-card { /* "card" displaying each work photo */
+    height: 275px;
+    border: 5px solid;
+    background-position: center;
+    background-size: cover;  
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#pc1 {
+    background-image: url("../img/carto/vermont.png");
+}
+
+#pc2 {
+    background-image: url("../img/carto/sf.jpg");
+}
+
+#pc3 {
+    background-image: url("../img/carto/water.png")
+}
+
+#pc4 {
+    background-image: url("../img/carto/salmon.png")
+}
+
+/* CARTO */
+.port-container.carto a {
+    height: 400px;
+}
+
+@media (min-width: 925px) {
+    .port-container.carto a {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1075px) {
+    .port-container.carto a {
+        height: 450px;
+    }
+
+    .carto .port-cardwrapper .port-card {
+        height: 325px;
+    }
+
+    .port-cardwrapper {
+        height: 400px;
+    }
+}
+
+.caption-wrapper.carto {
+    opacity: 1;
+}
+
+#cc1 {
+    background-image: url("../img/carto/vermont.png");
+}
+
+#cc2 {
+    background-image: url("../img/carto/sf.jpg");
+}
+
+#cc3 {
+    background-image: url("../img/carto/water.png");
+}
+
+#cc4 {
+    background-image: url("../img/carto/salmon.png");
+}
+
+#cc5 {
+    background-image: url("../img/carto/milkflow.png");
+}
+
+#cc6 {
+    background-image: url("../img/carto/food_sys.png");
+}
+
+#cc7 {
+    background-image: url("../img/carto/herdsize.png");
+}
+
+#cc8 {
+    background-image: url("../img/carto/untethered.png");
+}
+
+/* water */
+.carto-img {
+    width: 100%;
+    margin: 30px 0px;
+    border: 4px solid;
+}
+
+/* milkflow */
+.milkflow {
+    width: 80%;
+    border: 0;
+    height: 550px;
+    margin: 30px auto;
+    display: block;
+}
+
+/* WOOD */
+.main.wood {
+    padding: 0;
+}
+
+.wood-container {
+    margin: auto;
+    width: 70vw;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wood-portcard {
+    border: 4px solid;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wood-title {
+    padding: 0% 15vw;
+    margin: 40px 0px 10px 0px;
+}
+
+#kayak1 {
+    background-image: url("../img/wood/kayak1.png");
+    height: 27vw;
+    width: 69.8%;
+}
+
+#kayak2 {
+    background-image: url("../img/wood/kayak2.jpg");
+    height: 27vw;
+    width: 29.8%;
+}
+
+#sign1 {
+    background-image: url("../img/wood/sign1.jpg");
+    width: 100%;
+    height: 28vw;
+    margin-bottom: 0.3%;
+}
+
+#sign2 {
+    background-image: url("../img/wood/sign2.JPG");
+    height: 30vw;
+    width: 62.2%;
+}
+
+#sign3 {
+    background-image: url("../img/wood/sign3.jpg");
+    height: 30vw;
+    width: 37.4%;
+}
+
+#cajon1 {
+    background-image: url("../img/wood/cajon1.jpg");
+    height: 27vw;
+    width: 29.8%;
+}
+
+#cajon2 {
+    background-image: url("../img/wood/cajon2.jpg");
+    height: 27vw;
+    width: 69.8%;
+}
+
+#shelf1 {
+    background-image: url("../img/wood/catshelf3.jpg");
+    height: 30vw;
+    width: 45.5%;
+}
+
+#shelf2 {
+    background-image: url("../img/wood/catshelf2.jpg");
+    height: 30vw;
+    width: 54.1%;
+}
+
+#print {
+    background-image: url("../img/wood/woodcut.jpg");
+    height: 35vw;
+    width: 50%;
+}
