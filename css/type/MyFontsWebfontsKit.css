@@ -27,14 +27,17 @@
 @font-face {
   font-family: "AvenirLTPro-BlackOblique";
   src: url('webFonts/AvenirLTProBlackOblique/font.woff2') format('woff2'), url('webFonts/AvenirLTProBlackOblique/font.woff') format('woff');
+  font-weight: normal;
 }
 @font-face {
   font-family: "AvenirLTPro-Black";
   src: url('webFonts/AvenirLTProBlack/font.woff2') format('woff2'), url('webFonts/AvenirLTProBlack/font.woff') format('woff');
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "AvenirLTPro-Light";
   src: url('webFonts/AvenirLTProLight/font.woff2') format('woff2'), url('webFonts/AvenirLTProLight/font.woff') format('woff');
+  font-weight: normal;
 }
 
