@@ -460,6 +460,12 @@ li {
     width: 54.1%;
 }
 
+#laser {
+    background-image: url("../img/wood/laser.jpg");
+    width: 50%;
+    height: 35vw
+}
+
 #print {
     background-image: url("../img/wood/woodcut.jpg");
     height: 35vw;
