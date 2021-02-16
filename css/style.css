@@ -378,8 +378,13 @@ li {
 }
 
 #cc8 {
-    background-image: url("../img/carto/untethered.png");
+    background-image: url("../img/carto/untethered1.png");
 }
+
+#cc9 {
+    background-image: url("../img/carto/untethered2.jpg");
+}
+
 
 .carto-img {
     width: 100%;
