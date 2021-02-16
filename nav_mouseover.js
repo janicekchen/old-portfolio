@@ -1,9 +1,7 @@
 function navHover(id, color) {
     let navLink = document.getElementById(id);
     let navLinkLower = document.getElementById(id + "-lower");
-    if (id == "title") {
-        let navLinkLowest = document.getElementById(id + "-lowest");
-    }
+
     navLink.addEventListener("mouseenter", function(event) {
         event.target.style.color = color;
         event.target.style.opacity = 0.9;
@@ -27,3 +25,4 @@ function navHover(id, color) {
 navHover('carto',  "#ff48b0");
 navHover('writing', '#0078bf');
 navHover('wood', '#0078bf');
+navHover('title', '#0078bf');
