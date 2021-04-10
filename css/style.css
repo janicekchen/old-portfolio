@@ -29,7 +29,7 @@ body {
 .main { /* for space below navbar */
     width: 100%;
     padding: 0 7%;
-    margin-top: 300px;
+    margin-top: 250px;
     z-index: 0;
 }
 
@@ -249,7 +249,7 @@ li {
 
 /* HOME */
 #home-intro {
-    height: 15vh;
+    margin-bottom: 50px;
 }
 
 .port-container { /* wrapper for all portfolio cards */
@@ -421,8 +421,16 @@ li {
     flex-wrap: wrap;
 }
 
+@media (min-width: 750px) {
+    .wood-portcard {
+        border: 4px solid;
+    }
+}
+
+
 .wood-portcard {
-    border: 4px solid;
+    width: 100%;
+    border: 2.5px solid;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
