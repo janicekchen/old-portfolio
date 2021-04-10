@@ -19,6 +19,13 @@ body {
     background-color: var(--beige);
 }
 
+#cgrl {
+    color: darkslategrey;
+}
+
+#cgrl:hover {
+    color: var(--yellow);
+}
 .main { /* for space below navbar */
     width: 100%;
     padding: 0 7%;
