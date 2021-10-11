@@ -392,6 +392,10 @@ li {
     background-image: url("../img/carto/untethered2.jpg");
 }
 
+#cc10 {
+    background-image:url("../img/carto/fire1.png")
+}
+
 
 .carto-img {
     width: 100%;
